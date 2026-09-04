@@ -1,7 +1,7 @@
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Cookies from "js-cookie";
-import { Navigate, useNavigate } from "react-router";
+import { useNavigate } from "react-router";
 
 const Home = () => {
   const navigate = useNavigate();

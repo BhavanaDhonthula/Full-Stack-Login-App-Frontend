@@ -1,5 +1,5 @@
 import Cookies from "js-cookie";
-import { Route, Navigate } from "react-router";
+import { Navigate } from "react-router";
 
 const ProtectedRoute = ({ children }) => {
   const jwtToken = Cookies.get("ACCESS_TOKEN");
