@@ -1,0 +1,10 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.home-bg-container {
+  text-align: center;
+  height: 100vh;
+  background-color: black;
+}

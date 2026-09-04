@@ -1,0 +1,47 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.register-bg-container {
+  height: 100vh;
+  background-color: black;
+}
+
+.registration-form-container {
+  box-shadow: 0 0 2px 2px rgb(216, 212, 212);
+  border-radius: 4px;
+  text-align: center;
+  margin: 10px;
+}
+
+@media (max-width: 576px) {
+  .registration-form-container {
+    width: 250px;
+  }
+}
+
+@media (min-width: 577px) {
+  .registration-form-container {
+    width: 350px;
+  }
+}
+
+.submit-btn {
+  cursor: pointer;
+  font-weight: 700 !important;
+}
+
+.login-link {
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.login-text {
+  font-weight: 400;
+}
+
+.errMsg {
+  font-weight: 700;
+}

@@ -1,0 +1,23 @@
+.login-bg-container {
+  height: 100vh;
+  background-color: black;
+}
+
+.login-form-container {
+  margin: 10px;
+  box-shadow: 0 0 2px 2px rgb(133, 131, 131);
+  border-radius: 4px;
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  .login-form-container {
+    width: 250px;
+  }
+}
+
+@media (min-width: 577px) {
+  .login-form-container {
+    width: 350px;
+  }
+}
