@@ -33,7 +33,7 @@ const Register = () => {
       mobileNo,
     };
 
-    const url = "http://localhost:5000/register";
+    const url = "https://full-stack-login-app-backend.onrender.com/register";
     const options = {
       method: "POST",
       headers: {
