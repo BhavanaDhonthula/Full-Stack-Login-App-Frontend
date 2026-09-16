@@ -8,3 +8,12 @@
   height: 100vh;
   background-color: black;
 }
+
+.greeting {
+  color: cyan;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.welcome {
+  font-family: "Times New Roman", Times, serif;
+}

@@ -11,9 +11,10 @@ const Login = () => {
   const [errMsg, setErrMsg] = useState("");
   const [isShowPasswordClicked, setShowPassword] = useState(false);
 
-  const loginSuccess = (jwtToken) => {
+  const loginSuccess = (jwtToken, username) => {
     console.log(jwtToken);
     Cookies.set("ACCESS_TOKEN", jwtToken, { expires: 10 });
+    Cookies.set("USERNAME", username);
     navigate("/", { replace: true });
   };
 
@@ -26,7 +27,7 @@ const Login = () => {
 
     const userDetails = { username, password };
 
-    const url = "https://full-stack-login-app-backend.onrender.com/login";
+    const url = "http://localhost:5000/login";
     const options = {
       method: "POST",
       headers: {
@@ -39,7 +40,8 @@ const Login = () => {
     const data = await response.json();
 
     if (response.ok) {
-      loginSuccess(data.jwt_token);
+      loginSuccess(data.jwt_token, data.username);
+      console.log(data);
     } else {
       loginFailure(data.err_msg);
     }
